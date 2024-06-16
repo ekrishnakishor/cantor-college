@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | Cantor College</title>
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/webp" />
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/png" />
+    <!-- <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/Index.css" />
+    <link rel="stylesheet" href="./Styles/about.css" />
+    <link rel="stylesheet" href="./Styles/courses.css" />
+  </head>
+  <body>
+    <!-- header  -->
+
+    <header>
+      <nav class="navbar">
+        <div class="menu">
+          <picture class="logo">
+            <source
+              srcset="./assets/Logo-transparent.webp"
+              type="image/webp"
+              class="lazyload"
+            />
+            <img
+              src="./assets/Logo-transparent.webp"
+              alt="Logo"
+              type="image/webp"
+            />
+          </picture>
+          <div class="nav-links">
+            <a href="./index.html" class="nav-item">Home</a>
+            <a href="./about.html" class="nav-item">About</a>
+            <a href="./courses.html" class="nav-item">Courses</a>
+            <a href="./learning.html" class="nav-item">Learning</a>
+            <a href="./contact.html" class="nav-item">Contact</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="./assets/menu.webp"
+            type="image/webp"
+            class="lazyload"
+          />
+          <img
+            src="./assets/menu.webp"
+            alt="menu-icon"
+            type="image/webp"
+            class="hamburger"
+            onclick="menuFunction()"
+          />
+        </picture>
+      </nav>
+      <div id="hamburger-menu" class="hide">
+        <a href="./index.html" class="nav-item">Home</a>
+        <a href="./about.html" class="nav-item">About</a>
+        <a href="./learning.html" class="nav-item">Learning</a>
+        <a href="#" class="nav-item">Contact</a>
+        <a href="./courses.html" class="nav-item">Contact</a>
+      </div>
+    </header>
+
+    <!-- Course  -->
+
+    <div class="courses-page">
+      <h1>Course List</h1>
+      <div id="course-container"></div>
+      <div id="pagination">
+        <button id="prev" onclick="prevPage()">Prev</button>
+        <span id="page-info"></span>
+        <button id="next" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- footer section  -->
+
+    <footer>
+      <div class="layout">
+        <div class="foot-left">
+          <picture>
+            <source srcset="./assets/Logo-transparent.webp" class="lazyload" />
+            <img
+              src="./assets/Logo-transparent.webp"
+              alt="logo"
+              type="image/webp"
+            />
+          </picture>
+        </div>
+        <div class="foot-middle">
+          <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./courses.html">Courses</a>
+            <a href="./learning.html">Learning</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="foot-right">
+          <div class="address">
+            <h3>Address</h3>
+            <p>Cantor College, Main Street<br />Sheffield, SC4 2BB</p>
+          </div>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p>
+              <strong>Mobile:</strong> (01321) 2340 235, Fax: (01321) 2340 236
+            </p>
+            <p><strong>Email:</strong> info@cantorcollege.ac.uk</p>
+          </div>
+        </div>
+      </div>
+      <p class="credits">© 2024 Cantor College.</p>
+    </footer>
+
+    <script src="./js/lazysizes.min.js" async=""></script>
+    <script src="./js/menuFunction.js"></script>
+   <script src="./js/courses.js"></script>
+  </body>
+</html>

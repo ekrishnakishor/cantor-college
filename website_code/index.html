@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/webp" />
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/png" />
+    <!-- <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./Styles/Index.css" />
+    <title>Home | Cantor College</title>
+  </head>
+  <body>
+    <!-- header  -->
+
+    <header>
+      <nav class="navbar">
+        <div class="menu">
+          <picture class="logo">
+            <source
+              srcset="./assets/Logo-transparent.webp"
+              type="image/webp"
+              class="lazyload"
+            />
+            <img
+              src="./assets/Logo-transparent.webp"
+              alt="Logo"
+              type="image/webp"
+            />
+          </picture>
+          <div class="nav-links">
+            <a href="./index.html" class="nav-item">Home</a>
+            <a href="./about.html" class="nav-item">About</a>
+            <a href="./courses.html" class="nav-item">Courses</a>
+            <a href="./learning.html" class="nav-item">Learning</a>
+            <a href="./contact.html" class="nav-item">Contact</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="./assets/menu.webp"
+            type="image/webp"
+            class="lazyload"
+          />
+          <img
+            src="./assets/menu.webp"
+            alt="menu-icon"
+            type="image/webp"
+            class="hamburger"
+            onclick="menuFunction()"
+          />
+        </picture>
+      </nav>
+      <div id="hamburger-menu" class="hide">
+        <a href="./index.html" class="nav-item">Home</a>
+        <a href="./about.html" class="nav-item">About</a>
+        <a href="./learning.html" class="nav-item">Learning</a>
+        <a href="./courses.html" class="nav-item">Courses</a>
+        <a href="./contact.html" class="nav-item">Contact</a>
+      </div>
+    </header>
+
+    <!-- section starts here  -->
+
+    <section>
+      <div class="section-slides">
+        <picture>
+          <source srcset="./assets/cantor-main-hall.webp" class="lazyload" />
+          <!-- <source srcset="image.jpg" type="image/jpeg"> -->
+          <img
+            src="./assets/cantor-main-hall.webp"
+            alt="cantor-main-hall"
+            type="image/webp"
+            class="slides"
+          />
+        </picture>
+        <picture>
+          <source srcset="./assets/computer-lab.webp" class="lazyload" />
+          <!-- <source srcset="image.jpg" type="image/jpeg"> -->
+          <img
+            src="./assets/computer-lab.webp"
+            alt="computer-lab"
+            type="image/webp"
+            class="slides"
+          />
+        </picture>
+        <picture>
+          <source srcset="./assets/cantor-main-hall.webp" class="lazyload" />
+          <!-- <source srcset="image.jpg" type="image/jpeg"> -->
+          <img
+            src="./assets/cantor-main-hall.webp"
+            alt="cantor-main-hall"
+            type="image/webp"
+            class="slides"
+          />
+        </picture>
+        <div class="overlay">
+          <h1>Admissions Are Open Now</h1>
+          <button>Apply Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News Section  -->
+
+    <section>
+      <div class="floating-news">
+        <marquee
+          behavior="scroll"
+          direction="left"
+          onmouseover="this.stop();"
+          onmouseout="this.start();"
+        >
+          &#x25B6; Term-1 results are out. Contact your HOD for more updates. |
+          &#x25B6; Term-2 Classes will commense form July 10th | &#x25B6;
+          Students are requested to update their Assignments for certfications
+        </marquee>
+      </div>
+    </section>
+
+    <!-- facilities section  -->
+
+    <section class="facilities-section">
+      <div class="facilities-menu">
+        <button class="campus-button" onclick="facilities('campus')">
+          Campus
+        </button>
+        <button class="campus-button" onclick="facilities('facilities')">
+          Faculties
+        </button>
+        <button class="campus-button" onclick="facilities('library')">
+          Library
+        </button>
+      </div>
+
+      <div id="campus" class="name" style="display: none">
+        <h2>Campus</h2>
+        <p>
+          The College is located in the attractive and pleasantly refurbished
+          Building. The building houses computing laboratories, and
+          lecture/tutorial rooms. It has its own catering facilities and student
+          work areas. There is also a car park to the back of the building.
+        </p>
+        <button id="redirect-button">Learn more &#x2197;</button>
+      </div>
+      <div id="facilities" class="name" style="display: none">
+        <h2>Facilties</h2>
+        <div class="custom-list">
+          <div class="list-item">&#x27A4; Wi-Fi technology</div>
+          <div class="list-item">
+            &#x27A4; Pool teaching rooms, including classrooms to teach from 25
+            - 80 students
+          </div>
+          <div class="list-item">&#x27A4; Specialist faculty facilities</div>
+          <div class="list-item">
+            &#x27A4; A double-height lecture theatre at first and second-floor
+            level
+          </div>
+          <div class="list-item">
+            &#x27A4; Dramatic three-storey glass open atrium
+          </div>
+          <div class="list-item">&#x27A4; Meeting rooms</div>
+          <div class="list-item">&#x27A4; Office accommodation</div>
+          <div class="list-item">&#x27A4; Specialist IT facilities</div>
+          <div class="list-item">&#x27A4; Reception desk area</div>
+          <div class="list-item">&#x27A4; Catering outlet</div>
+          <div class="list-item">
+            &#x27A4; Parking for disabled badge holders
+          </div>
+          <div class="list-item">&#x27A4; Cycle racks</div>
+        </div>
+        <button>Learn more &#x2197;</button>
+      </div>
+      <div id="library" class="name" style="display: none">
+        <h2>Library</h2>
+        <p>
+          We had a strong community of students to guide and connect with
+          graduates for their better learning, culturals, understadning and
+          digital wellbeing. A strong sense of social responsibility was
+          instilled within our students through this programme which will be
+          continued by future cohorts.
+        </p>
+        <button>Learn more &#x2197;</button>
+      </div>
+    </section>
+
+    <!-- Section Blog  -->
+
+    <section class="blog-section">
+      <div class="blog">
+        <div class="blog-image">
+          <picture>
+            <source srcset="./assets/college-outside.webp" class="lazyload" />
+            <img
+              src="./assets/college-outside.webp"
+              alt="college-outside"
+              type="image/webp"
+              class="blog-cover"
+            />
+          </picture>
+          <div class="blog-cover-name">
+            <h4>Life at Cantor</h4>
+          </div>
+        </div>
+        <div class="blog-content">
+          <h2>Life @Cantor</h2>
+          <p>
+            @Cantor We have a strong community of students to guide and connect
+            with graduates for their better learning, culturals, understadning
+            and digital wellbeing. A strong sense of social responsibility was
+            instilled within our students through this programme which will be
+            continued by future cohorts.
+          </p>
+          <button id="open-dialog">Learn more &#x2197;</button>
+          <div id="dialog-box" class="dialog-box">
+            <div class="dialog-content">
+              <p>More updates are on the way!</p>
+              <button id="close-dialog">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- For Staff  -->
+
+    <div class="accordion-container">
+      <h1>Information for Staff</h1>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            News
+          </div>
+          <div class="accordion-content">
+            <p>
+              Cantor College recently hosted the Software Engineering student of
+              the year awards. Short-listed candidates from around the country
+              attended the one day event.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Academic Registry
+          </div>
+          <div class="accordion-content">
+            <p>
+              For academic regulations, assessment, awards, student records and
+              course validation.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Catering Services
+          </div>
+          <div class="accordion-content">
+            <p>
+              Contact the Catering Services regarding on and off-site catering.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Financial Services
+          </div>
+          <div class="accordion-content">
+            <p>
+              The financial team based on the 2nd Floor are responsible for all
+              areas of student finance as well as College budgeting.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Information Systems Services
+          </div>
+          <div class="accordion-content">
+            <p>
+              The ISS team delivers the College’s computing facilities including
+              all hardware and software. They also run the staff helpdesk.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Marketing Services
+          </div>
+          <div class="accordion-content">
+            <p>
+              The Marketing Team will help promote events and new courses. They
+              will help with press release preparation.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Personnel Services
+          </div>
+          <div class="accordion-content">
+            <p>
+              All staff pay and conditions enquiries should be directed to the
+              Personnel Services team on the 3rd floor.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Facilities
+          </div>
+          <div class="accordion-content">
+            <p>
+              The facilities are responsible for the general care and
+              maintenance of the College. All enquiries via the main helpdesk.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section  -->
+
+    <footer>
+      <div class="layout">
+        <div class="foot-left">
+          <picture>
+            <source srcset="./assets/Logo-transparent.webp" class="lazyload" />
+            <img
+              src="./assets/Logo-transparent.webp"
+              alt="logo"
+              type="image/webp"
+            />
+          </picture>
+        </div>
+        <div class="foot-middle">
+          <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="#">Courses</a>
+            <a href="./learning.html">Learning</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+        <div class="foot-right">
+          <div class="address">
+            <h3>Address</h3>
+            <p>Cantor College, Main Street<br />Sheffield, SC4 2BB</p>
+          </div>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p>
+              <strong>Mobile:</strong> (01321) 2340 235, Fax: (01321) 2340 236
+            </p>
+            <p><strong>Email:</strong> info@cantorcollege.ac.uk</p>
+          </div>
+        </div>
+      </div>
+      <p class="credits">© 2024 Cantor College.</p>
+    </footer>
+
+    <script src="./js/lazysizes.min.js" async=""></script>
+    <script src="./js/SlideShow.js"></script>
+    <script src="./js/menuFunction.js"></script>
+    <script src="./js/facilities.js"></script>
+    <script src="./js/accordian.js"></script>
+    <script src="./js/blog.js"></script>
+    <script>
+      document
+        .getElementById("redirect-button")
+        .addEventListener("click", function () {
+          window.location.href = "students.html";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/webp" />
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/png" />
+    <!-- <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./Styles/Index.css" />
+    <link rel="stylesheet" href="./Styles/students.css" />
+    <link rel="stylesheet" href="./Styles/about.css">
+    <title>Students | Cantor College</title>
+  </head>
+  <body>
+    <!-- header  -->
+
+    <header>
+      <nav class="navbar">
+        <div class="menu">
+          <picture class="logo">
+            <source
+              srcset="./assets/Logo-transparent.webp"
+              type="image/webp"
+              class="lazyload"
+            />
+            <img
+              src="./assets/Logo-transparent.webp"
+              alt="Logo"
+              type="image/webp"
+            />
+          </picture>
+          <div class="nav-links">
+            <a href="./index.html" class="nav-item">Home</a>
+            <a href="./about.html" class="nav-item">About</a>
+            <a href="./courses.html" class="nav-item">Courses</a>
+            <a href="./learning.html" class="nav-item">Learning</a>
+            <a href="#" class="nav-item">Contact</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="./assets/menu.webp"
+            type="image/webp"
+            class="lazyload"
+          />
+          <img
+            src="./assets/menu.webp"
+            alt="menu-icon"
+            type="image/webp"
+            class="hamburger"
+            onclick="menuFunction()"
+          />
+        </picture>
+      </nav>
+      <div id="hamburger-menu" class="hide">
+        <a href="./index.html" class="nav-item">Home</a>
+        <a href="./about.html" class="nav-item">About</a>
+        <a href="./learning.html" class="nav-item">Learning</a>
+        <a href="./courses.html" class="nav-item">Courses</a>
+        <a href="./contact.html" class="nav-item">Contact</a>
+      </div>
+    </header>
+
+    <!-- Grid Layout  -->
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="main-heading">Academic Information</div>
+        <div class="points">
+          <ul>
+            <li>
+              Faculties - Faculty and Departmental Offices with information on
+              staff, courses and events.
+            </li>
+            <li>A to Z List of Departments</li>
+            <li>Library and Learning Resource Services</li>
+            <li>Our Academic Partners</li>
+            <li>
+              Research - Research Centres, guide to research opportunities and
+              help on finding research funding.
+            </li>
+          </ul>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="main-heading">Administrative Support</div>
+        <div class="points">
+          <ul>
+            <li>
+              Academic Registry - Academic Registry, including Academic
+              Calendars, Academic Regulations, Module Catalogue, information on
+              award ceremonies and tuition fees.
+            </li>
+            <li>
+              Student Guide to Regulations - General and Academic Regulations,
+              World Wide Web Code of Practice, Rules Governing the Use of LLRS
+              facilities.
+            </li>
+          </ul>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="main-heading">Student Services</div>
+        <div class="points">
+          <ul>
+            <li>
+              Advisory and Counselling Centre - academic advice, help for
+              international students, careers guidance, personal counselling,
+              student loans and access funds and support for students with
+              disabilities/learning difficulties.
+            </li>
+            <li>
+              Health Centre - guide to the services provided by the University
+              Health Centre.
+            </li>
+            <li>
+              Multi-Faith Centre - information regarding the work of the
+              Multi-Faith Centre.
+            </li>
+            <li>
+              Pre-School Centre - contact information regarding the University's
+              child care facilities.
+            </li>
+            <li>Sports Centre - booking arrangements and facilities.</li>
+          </ul>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="main-heading">University Services</div>
+        <div class="points">
+          <ul>
+            <li>
+              Catering Services - guide to the catering facilities on campus.
+            </li>
+            <li>
+              Printing Services - information regarding services provided for
+              students.
+            </li>
+            <li>
+              Student Accommodation Services - guide to University Accommodation
+              and help on finding accommodation in the private sector.
+            </li>
+          </ul>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="main-heading">Life at the University</div>
+        <div class="points">
+          <ul>
+            <li>Arts Centre - what's on at the University's arts venues.</li>
+            <li>
+              Students' Union - events and services provided by the Students'
+              Union.
+            </li>
+            <li>University Guide - a full guide to life at the University.</li>
+            <li>
+              Campus Navigator - help with finding your way around campus.
+            </li>
+          </ul>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="main-heading">Communications</div>
+        <div class="points">
+          <ul>
+            <li>
+              Noticeboards - General, Classified, Events and Alumni
+              noticeboards.
+            </li>
+            <li>Student Email Search - database of student email addresses.</li>
+            <li>Staff Search - database of staff email addresses.</li>
+            <li>
+              A to Z List of Services - full A to Z list of University Services.
+            </li>
+          </ul>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subscribe Section  -->
+
+    <section class="subscribe-section">
+      <div class="form-container">
+        <h2>Add your email to receive the latest updates</h2>
+        <form id="subscribe-form">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+      <div class="layout">
+        <div class="foot-left">
+          <picture>
+            <source srcset="./assets/Logo-transparent.webp" class="lazyload" />
+            <img
+              src="./assets/Logo-transparent.webp"
+              alt="logo"
+              type="image/webp"
+            />
+          </picture>
+        </div>
+        <div class="foot-middle">
+          <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./courses.html">Courses</a>
+            <a href="./learning.html">Learning</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="foot-right">
+          <div class="address">
+            <h3>Address</h3>
+            <p>Cantor College, Main Street<br />Sheffield, SC4 2BB</p>
+          </div>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p>
+              <strong>Mobile:</strong> (01321) 2340 235, Fax: (01321) 2340 236
+            </p>
+            <p><strong>Email:</strong> info@cantorcollege.ac.uk</p>
+          </div>
+        </div>
+      </div>
+      <p class="credits">© 2024 Cantor College.</p>
+    </footer>
+
+    <script src="./js/lazysizes.min.js" async=""></script>
+    <script src="./js/menuFunction.js"></script>
+    <script src="./js/subscribe.js"></script>
+  </body>
+</html>

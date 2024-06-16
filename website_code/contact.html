@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Cantor College</title>
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/webp" />
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/png" />
+    <!-- <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./Styles/Index.css" />
+    <link rel="stylesheet" href="./Styles/contact.css" />
+    <link rel="stylesheet" href="./Styles/about.css">
+  </head>
+  <body>
+    <!-- header  -->
+
+    <header>
+      <nav class="navbar">
+        <div class="menu">
+          <picture class="logo">
+            <source
+              srcset="./assets/Logo-transparent.webp"
+              type="image/webp"
+              class="lazyload"
+            />
+            <img
+              src="./assets/Logo-transparent.webp"
+              alt="Logo"
+              type="image/webp"
+            />
+          </picture>
+          <div class="nav-links">
+            <a href="./index.html" class="nav-item">Home</a>
+            <a href="./about.html" class="nav-item">About</a>
+            <a href="./courses.html" class="nav-item">Courses</a>
+            <a href="./learning.html" class="nav-item">Learning</a>
+            <a href="./contact.html" class="nav-item">Contact</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="./assets/menu.webp"
+            type="image/webp"
+            class="lazyload"
+          />
+          <img
+            src="./assets/menu.webp"
+            alt="menu-icon"
+            type="image/webp"
+            class="hamburger"
+            onclick="menuFunction()"
+          />
+        </picture>
+      </nav>
+      <div id="hamburger-menu" class="hide">
+        <a href="./index.html" class="nav-item">Home</a>
+        <a href="./about.html" class="nav-item">About</a>
+        <a href="./learning.html" class="nav-item">Learning</a>
+        <a href="./contact.html" class="nav-item">Contact</a>
+        <a href="./courses.html" class="nav-item">Courses</a>
+      </div>
+    </header>
+
+    <!-- Contact Form  -->
+
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" name="contact-number" required />
+
+        <label>Reason for Contact:</label>
+        <div class="radio-group">
+          <div>
+            <input
+              type="radio"
+              id="courses"
+              name="reason"
+              value="courses"
+              required
+            />
+            <label for="courses">Courses</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="business"
+              name="reason"
+              value="business"
+              required
+            />
+            <label for="business">Business</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="others"
+              name="reason"
+              value="others"
+              required
+            />
+            <label for="others">Others</label>
+          </div>
+        </div>
+
+        <div id="courses-dropdown" class="dropdown hidden">
+          <label for="courses-select">Select Course:</label>
+          <select id="courses-select" name="courses-select">
+            <option value="Computing">Computing</option>
+            <option value="Computer Networks">Computer Networks</option>
+            <option value="Cyber Security with Forensics">
+              Cyber Security with Forensics
+            </option>
+            <option value="Computer Science for Games">
+              Computer Science for Games
+            </option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Computing with Foundation Year">
+              Computing with Foundation Year
+            </option>
+            <option value="Cyber Security with Forensics with Foundation Year">
+              Cyber Security with Forensics with Foundation Year
+            </option>
+            <option value="Software Engineering with Foundation Year">
+              Software Engineering with Foundation Year
+            </option>
+            <option value="Cyber Security with Foundation Year">
+              Cyber Security with Foundation Year
+            </option>
+            <option
+              value="Information Technology with Business Studies with Foundation Year"
+            >
+              Information Technology with Business Studies with Foundation Year
+            </option>
+            <option value="Computer Science with Foundation Year">
+              Computer Science with Foundation Year
+            </option>
+            <option value="Computer Science for Games with Foundation Year">
+              Computer Science for Games with Foundation Year
+            </option>
+            <option
+              value="Business and Digital Technology with Foundation Year"
+            >
+              Business and Digital Technology with Foundation Year
+            </option>
+            <option value="Computing">Computing</option>
+            <option value="Computing and Informatics">
+              Computing and Informatics
+            </option>
+            <option value="Cyber Security">Cyber Security</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Interior Architecture and Design">
+              Interior Architecture and Design
+            </option>
+            <option value="Jewellery, Materials and Design">
+              Jewellery, Materials and Design
+            </option>
+            <option value="Game Design and Development">
+              Game Design and Development
+            </option>
+            <option value="Product Design">Product Design</option>
+            <option value="Digital Media Production">
+              Digital Media Production
+            </option>
+          </select>
+        </div>
+
+        <div id="business-dropdown" class="dropdown hidden">
+          <label for="business-select">Select Business Option:</label>
+          <select id="business-select" name="business-select">
+            <option value="sponsorship">Sponsorship</option>
+            <option value="hire from Cantor">Hire from Cantor</option>
+            <option value="careers">Careers</option>
+          </select>
+        </div>
+
+        <div id="others-textbox" class="hidden">
+          <label for="others-text">Please Specify:</label>
+          <input type="text" id="others-text" name="others-text" />
+        </div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+
+    <!-- Subscribe Section  -->
+
+    <section class="subscribe-section">
+        <div class="form-container">
+          <h2>Add your email to receive the latest updates</h2>
+          <form id="subscribe-form">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+    <!-- footer section  -->
+
+    <footer>
+      <div class="layout">
+        <div class="foot-left">
+          <picture>
+            <source srcset="./assets/Logo-transparent.webp" class="lazyload" />
+            <img
+              src="./assets/Logo-transparent.webp"
+              alt="logo"
+              type="image/webp"
+            />
+          </picture>
+        </div>
+        <div class="foot-middle">
+          <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./courses.html">Courses</a>
+            <a href="./learning.html">Learning</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="foot-right">
+          <div class="address">
+            <h3>Address</h3>
+            <p>Cantor College, Main Street<br />Sheffield, SC4 2BB</p>
+          </div>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p>
+              <strong>Mobile:</strong> (01321) 2340 235, Fax: (01321) 2340 236
+            </p>
+            <p><strong>Email:</strong> info@cantorcollege.ac.uk</p>
+          </div>
+        </div>
+      </div>
+      <p class="credits">© 2024 Cantor College.</p>
+    </footer>
+
+    <script src="./js/lazysizes.min.js" async=""></script>
+    <script src="./js/menuFunction.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
